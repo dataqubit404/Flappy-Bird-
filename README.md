@@ -1,115 +1,49 @@
-# 🐦 Flappy Bird AI — Reinforcement Learning Agent 🎮🤖
+# 🐦 Flappy Bird — Neon Sky Edition
 
-An AI-powered version of the classic Flappy Bird game where an intelligent agent learns to play using Reinforcement Learning (Deep Q-Network). The agent improves over time through trial-and-error to maximize survival and score.
+A modern, high-performance Flappy Bird clone built with **HTML5 Canvas**, **CSS3**, and **Vanilla JavaScript**. This version features a sleek "Neon Sky" aesthetic, dynamic difficulty scaling, and a particle physics system.
 
----
+!(https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png)
 
-# 🚀 Project Overview
+## ✨ Features
 
-This project demonstrates how an AI agent can learn complex behavior in a dynamic environment without explicit programming.
+* **Dynamic Difficulty:** The game gets progressively harder (tighter gaps and faster speeds) as your score increases.
+* **Neon Aesthetics:** A beautiful night-sky background with glowing stars, parallax clouds, and neon-styled pipes.
+* **Smooth Physics:** Custom gravity and rotation physics for a responsive "weighty" feel.
+* **Particle System:** Visual feedback through "flap" particles and explosive score celebrations.
+* **Web Audio API:** Procedurally generated sound effects for jumping, scoring, and collisions (no external MP3 files required).
+* **Responsive Design:** Automatically scales to fit mobile, tablet, and desktop screens.
+* **Local High Score:** Saves your personal best score using the browser's `localStorage`.
 
-The bird learns when to flap by observing the game state and receiving rewards or penalties.
+## 🎮 How to Play
 
-**Goal:** Pass through as many pipes as possible without crashing.
+### Controls
+* **Spacebar / Up Arrow:** Flap/Jump.
+* **Mouse Click / Touch Tap:** Flap/Jump.
+* **P Key:** Toggle Pause.
+* **ESC Key:** Resume from Pause.
 
----
+### Objective
+Navigate the bird through the gaps in the pipes. Each successful pass earns you **1 point**. The game ends if you collide with a pipe or hit the ground.
 
-# 🧠 Key Concepts
+## 🛠️ Technology Stack
 
-- Reinforcement Learning (RL)
-- Deep Q-Network (DQN)
-- Exploration vs Exploitation
-- Reward Shaping
-- Game Simulation
-- Neural Networks
-- Policy Learning
+* **HTML5 Canvas:** For high-frame-rate game rendering.
+* **CSS3 Variable & Animations:** For UI overlays and neon glowing effects.
+* **JavaScript (ES6+):** Clean, modular code managing game state and physics.
+* **Google Fonts:** Utilizing 'Fredoka One' and 'Nunito' for a playful, polished UI.
 
----
+## 🚀 Quick Start
 
-# 🎮 Game Mechanics
+Since this project is built with Vanilla JS, you don't need to install any dependencies.
 
-## Environment
+1.  **Download** the three files: `index.html`, `style.css`, and `script.js`.
+2.  Place them in the **same folder**.
+3.  **Open** `index.html` in any modern web browser (Chrome, Firefox, Safari, or Edge).
 
-- Side-scrolling world with moving pipes  
-- Gravity affects the bird  
-- Random pipe gaps  
+## 📂 File Structure
 
-## Objective
-
-Stay alive and score by passing through pipes.
-
-## Actions
-
-- Flap — Jump upward  
-- No Flap — Let gravity pull down  
-
----
-
-# 🧾 State Representation
-
-The AI observes:
-
-- Bird's vertical position  
-- Bird's velocity  
-- Distance to next pipe  
-- Height of pipe gap  
-- Relative position to gap center  
-
----
-
-# 🏆 Reward System
-
-| Event | Reward |
-|--------|--------|
-| Pass pipe | +1 |
-| Stay alive (per frame) | +0.1 |
-| Crash | -1 |
-
----
-
-# 🤖 Learning Algorithm
-
-This project uses Deep Q-Learning (DQN):
-
-- Neural network approximates Q-values  
-- Experience replay buffer  
-- Target network for stability  
-- Epsilon-greedy exploration strategy  
-
----
-
-
----
-
-# ⚙️ Tech Stack
-
-- Python  
-- Pygame (game engine)  
-- PyTorch or TensorFlow  
-- NumPy  
-- Reinforcement Learning  
-
----
-
-# ▶️ How It Works
-
-1. Initialize game environment  
-2. Agent observes current state  
-3. Agent selects action (flap / no flap)  
-4. Environment updates  
-5. Agent receives reward  
-6. Experience stored in memory  
-7. Neural network updated  
-8. Repeat for thousands of episodes  
-
----
-
-# 📈 Training Process
-
-- Starts with random behavior  
-- Gradually learns safe flying  
-- Eventually masters pipe navigation  
-
-Training may take several thousand episodes depending on parameters.
-
----
+```text
+.
+├── index.html   # Main structure and UI overlays
+├── style.css    # Game styling and neon effects
+└── script.js    # Game engine, physics, and logic

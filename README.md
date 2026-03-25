@@ -2,7 +2,7 @@
 
 A modern, high-performance Flappy Bird clone built with **HTML5 Canvas**, **CSS3**, and **Vanilla JavaScript**. This version features a sleek "Neon Sky" aesthetic, dynamic difficulty scaling, and a particle physics system.
 
-!(https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png)
+🚀 Live Demo : https://flappy-bird-three-phi.vercel.app/
 
 ## ✨ Features
 
